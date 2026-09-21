@@ -1,0 +1,12 @@
+login_cases:
+  - case_name: "正常登录"
+    username: "admin"
+    password: "123456"
+    expect_status: 200
+    expect_code: 200
+
+  - case_name: "密码错误"
+    username: "admin"
+    password: "wrong_password"
+    expect_status: 200 # Mall 的业务异常仍返回 HTTP 200
+    expect_code: 500  # 业务码：密码错误

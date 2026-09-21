@@ -1,0 +1,12 @@
+brand_cases:
+  - case_name: "获取品牌列表-第1页"
+    page_num: 1
+    page_size: 5
+    expect_status: 200
+    expect_code: 200
+
+  - case_name: "获取品牌列表-第2页"
+    page_num: 2
+    page_size: 5
+    expect_status: 200
+    expect_code: 200

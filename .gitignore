@@ -1,0 +1,15 @@
+.idea
+.vscode/
+.postman
+.pytest_cache/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+report/allure-results/
+test.log
+test.log.*
+.DS_Store
+Thumbs.db
+
