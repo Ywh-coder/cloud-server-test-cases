@@ -1,8 +1,0 @@
-active_env: "test"
-env:
-  dev:
-    base_url: "http://8.163.24.111:8080"
-    timeout: 10
-  test:
-    base_url: "http://8.163.24.111:8080"
-    timeout: 10

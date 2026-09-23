@@ -1,0 +1,30 @@
+{
+  "type": "object",
+  "properties": {
+    "code": {"type": "integer"},
+    "message": {"type": "string"},
+    "data": {
+      "type": "object",
+      "properties": {
+        "pageNum": {"type": "integer"},
+        "pageSize": {"type": "integer"},
+        "total": {"type": "integer"},
+        "list": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {"type": "integer"},
+              "name": {"type": "string"},
+              "firstLetter": {"type": "string"},
+              "sort": {"type": "integer"}
+            },
+            "required": ["id", "name", "firstLetter"]
+          }
+        }
+      },
+      "required": ["pageNum", "pageSize", "list"]
+    }
+  },
+  "required": ["code", "message", "data"]
+}

@@ -3,3 +3,4 @@ pytest
 pyyaml
 allure-pytest
 jsonschema
+pymysql

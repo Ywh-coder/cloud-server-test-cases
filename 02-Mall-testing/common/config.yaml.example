@@ -1,0 +1,20 @@
+active_env: "test"
+env:
+  dev:
+    base_url: "http://8.163.24.111:8080"
+    timeout: 10
+    db:
+      host: "8.163.24.111"
+      port: 3306
+      user: "root"
+      password: "your_dev_password"  # ⚠️ 注意：本地测试用，别提交到Git
+      database: "mall"
+  test:
+    base_url: "http://8.163.24.111:8080"
+    timeout: 10
+    db:
+      host: "8.163.24.111"
+      port: 3306
+      user: "root"
+      password: "your_test_password"
+      database: "mall"

@@ -12,4 +12,7 @@ test.log
 test.log.*
 .DS_Store
 Thumbs.db
-
+# 忽略真实的配置文件
+02-Mall-testing/common/config.yaml
+02-Mall-testing/performance/html_report/
+02-Mall-testing/performance/result.jtl
