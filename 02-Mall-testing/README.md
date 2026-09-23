@@ -51,3 +51,4 @@ allure serve ./report/allure-results
 ## 测试报告截图
 ![Allure 报告](../assets/Allure-report.png)
 ![JMeter 压测报告](../assets/jmeter_statistics.png)
+![Grafana 服务器监控图](../assets/grafana_monitor.png)
