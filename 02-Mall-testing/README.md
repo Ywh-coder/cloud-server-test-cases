@@ -46,3 +46,5 @@ allure serve ./report/allure-results
 ## 环境信息
 - 被测系统：http://8.163.24.111:8080
 - 部署方式：Docker Compose（Mall 电商系统）
+## 测试报告截图
+![Allure 报告](../assets/Allure-report.png)
