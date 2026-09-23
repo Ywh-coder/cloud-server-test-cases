@@ -9,18 +9,15 @@
 ```
 02-Mall-testing/
 ├── common/              # 请求封装、接口封装、环境配置
-│   ├── request_util.py  # HTTP 请求封装（含日志、异常处理）
-│   ├── login_api.py     # 登录接口封装
-│   ├── brand_api.py     # 品牌接口封装（含 token 管理）
-│   └── config.yaml      # 多环境配置
-├── data/                # YAML 测试数据
-│   ├── login_data.yaml
-│   └── brand_data.yaml
+├── data/                # YAML 测试数据（含 Schema 定义）
 ├── testcases/           # 测试用例
-│   ├── test_login.py
-│   └── test_brand.py
 ├── report/              # Allure 报告输出目录
-├── conftest.py          # pytest 钩子（注入环境信息 + session 级 fixture）
+├── performance/         # 性能测试目录
+│   ├── mall_performance.jmx  # JMeter 压测脚本
+│   ├── result.jtl            # 压测原始数据
+│   ├── html_report/          # JMeter HTML 压测报告
+│   └── README.md             # 性能测试报告
+├── conftest.py          # pytest 钩子 + db_util fixture
 ├── pytest.ini           # pytest 配置
 └── requirements.txt
 ```
@@ -46,5 +43,11 @@ allure serve ./report/allure-results
 ## 环境信息
 - 被测系统：http://8.163.24.111:8080
 - 部署方式：Docker Compose（Mall 电商系统）
+## 项目演进（体现你的成长）
+- **阶段一**：云端基础环境搭建与 OSS 对象存储手工测试。
+- **阶段二**：基于 Python + Pytest 搭建 Mall 系统接口自动化框架，实现 HTTP 状态码 + JSON Schema + 数据库一致性“三层断言”。
+- **阶段三**：使用 JMeter 进行 50 并发 5 分钟长稳压测，输出专业性能测试报告，TPS 达到 19.88，错误率 0%。
+
 ## 测试报告截图
 ![Allure 报告](../assets/Allure-report.png)
+![JMeter 压测报告](../assets/jmeter_statistics.png)
