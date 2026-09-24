@@ -43,7 +43,7 @@ allure serve ./report/allure-results
 ## 环境信息
 - 被测系统：http://8.163.24.111:8080
 - 部署方式：Docker Compose（Mall 电商系统）
-## 项目演进（体现你的成长）
+## 项目演进
 - **阶段一**：云端基础环境搭建与 OSS 对象存储手工测试。
 - **阶段二**：基于 Python + Pytest 搭建 Mall 系统接口自动化框架，实现 HTTP 状态码 + JSON Schema + 数据库一致性“三层断言”。
 - **阶段三**：使用 JMeter 进行 50 并发 5 分钟长稳压测，输出专业性能测试报告，TPS 达到 19.88，错误率 0%。
